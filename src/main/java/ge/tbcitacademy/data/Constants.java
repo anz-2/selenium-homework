@@ -1,0 +1,14 @@
+package ge.tbcitacademy.data;
+
+public class Constants {
+    public static final String NAVIGATE_TO_WEB = "http://the-internet.herokuapp.com/dynamic_controls";
+    public static final String ENABLE_MESSAGE = "It's enabled!";
+    public static final String DISABLE_TEXT = "Disable";
+    public static final String INPUT_TEXT = "TBC IT Academy";
+    public static final String MAIN_HEADING = "Dynamic Controls";
+    public static final String DESCRIPTION_TEXT = "This example demonstrates when elements (e.g., checkbox, input field, etc.) are changed asynchronously.";
+    public static final String BASA_URL = "https://ultimateqa.com/automation";
+    public static final String SERVICES_URL = "https://ultimateqa.com/consulting/";
+    public static final String DRAG_DROP_URL = "http://the-internet.herokuapp.com/drag_and_drop";
+    public static final String ELEMENTAL_SELENIUM_LINK = "http://elementalselenium.com/";
+}
