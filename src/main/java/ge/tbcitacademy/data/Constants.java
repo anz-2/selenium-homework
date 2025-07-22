@@ -11,4 +11,9 @@ public class Constants {
     public static final String SERVICES_URL = "https://ultimateqa.com/consulting/";
     public static final String DRAG_DROP_URL = "http://the-internet.herokuapp.com/drag_and_drop";
     public static final String ELEMENTAL_SELENIUM_LINK = "http://elementalselenium.com/";
+
+    //homework - Selenium Locators
+    public static final String SLIDER_URL = "https://jqueryui.com/slider/";
+    public static final String ADD_REMOVE_URL = "http://the-internet.herokuapp.com/add_remove_elements/";
+    public static final String CHALLENGING_DOM_URL = "http://the-internet.herokuapp.com/challenging_dom";
 }
