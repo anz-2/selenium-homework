@@ -1,4 +1,4 @@
-package ge.tbcitacademy.data;
+package ge.tbc.testautomation.data;
 
 public class Constants {
     public static final String NAVIGATE_TO_WEB = "http://the-internet.herokuapp.com/dynamic_controls";
@@ -16,4 +16,16 @@ public class Constants {
     public static final String SLIDER_URL = "https://jqueryui.com/slider/";
     public static final String ADD_REMOVE_URL = "http://the-internet.herokuapp.com/add_remove_elements/";
     public static final String CHALLENGING_DOM_URL = "http://the-internet.herokuapp.com/challenging_dom";
+
+    //Selenium Forms & Waits - homework
+    public static final String CUSTOMER_FORM_URL = "https://tympanus.net/Tutorials/CustomDropDownListStyling/";
+    public static final String DROPDOWN_OPTION = "Github";
+    public static final String NATIVE_SELECT_URL = "https://techcanvass.com/examples/register.html";
+    public static final String MODEL_OPTION = "Mega 123 Medium screen";
+    public static final String WAIT_FOR_DISAPPEARANCE_URL = "http://the-internet.herokuapp.com/dynamic_controls";
+    public static final String INPUT = "ACCESS GRANTED";
+    public static final String DISABLE_BTN_TXT = "Disable";
+    public static final String WAIT_FOR_TEXT_URL = "https://demoqa.com/progress-bar";
+    public static final String RESET_BTN_TXT = "Reset";
+
 }

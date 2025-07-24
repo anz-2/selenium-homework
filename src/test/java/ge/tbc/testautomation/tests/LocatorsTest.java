@@ -1,6 +1,6 @@
 package ge.tbc.testautomation.tests;
 
-import ge.tbcitacademy.data.Constants;
+import ge.tbc.testautomation.data.Constants;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
