@@ -29,5 +29,6 @@ public class HelperFunc {
             throw new IllegalStateException("wrong element type: " + element.getClass().getSimpleName());
         }
 
+        System.out.println("I AM A CHANGE MEANWHILE");
     }
 }
