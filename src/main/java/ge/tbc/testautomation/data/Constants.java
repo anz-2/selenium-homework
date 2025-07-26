@@ -28,4 +28,14 @@ public class Constants {
     public static final String WAIT_FOR_TEXT_URL = "https://demoqa.com/progress-bar";
     public static final String RESET_BTN_TXT = "Reset";
 
+    //homework - Selenium Exceptions, JSExecutor, Cookies
+    public static final String DELETE_TEST_URL = "http://webdriveruniversity.com/To-Do-List/index.html";
+    public static final String SCROLL_TEST_URL = "https://www.techlistic.com/2017/02/automate-demo-web-table-with-selenium.html";
+    public static final String ANOTHER_SCROLL_TEST_URL = "http://webdriveruniversity.com/Scrolling/index.html";
+    public static final String ENTRIES = "Entries";
+    public static final String FILTER_COOKIES_URL = "https://www.techlistic.com/2017/02/automate-demo-web-table-with-selenium.html";
+    public static final String COOKIE_VALUE = "pub_site";
+    public static final String COOKIE_NAME = "active_template";
+    public static final String INJECT_COOKIE_URL = "https://www.techlistic.com/2017/02/automate-demo-web-table-with-selenium.html";
+    public static final String EXCEPTIONS_URL = "https://www.wikipedia.org/";
 }
