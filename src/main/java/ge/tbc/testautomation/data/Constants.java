@@ -38,4 +38,7 @@ public class Constants {
     public static final String COOKIE_NAME = "active_template";
     public static final String INJECT_COOKIE_URL = "https://www.techlistic.com/2017/02/automate-demo-web-table-with-selenium.html";
     public static final String EXCEPTIONS_URL = "https://www.wikipedia.org/";
+
+    //homework - Jira Cases
+    public static final String W3_URL = "https://www.w3schools.com/";
 }
