@@ -41,4 +41,12 @@ public class Constants {
 
     //homework - Jira Cases
     public static final String W3_URL = "https://www.w3schools.com/";
+
+    //homework4 -automatedScenarios
+    public static final String OPENCART_URL  = "https://automationexercise.com/";
+    public static final String LOGIN_EMAIL = "testuser567@gmail.com";
+    public static final String LOGIN_PASSWORD = "1qaz";
+    public static final String SEARCH_INPUT = "POLO";
+    public  static final String INVALID_LOGIN_EMAIL = "tset@gmail.com";
+    public  static final String INVALID_LOGIN_PASSWORD = "12312";
 }
