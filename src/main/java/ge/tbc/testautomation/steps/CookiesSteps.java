@@ -1,47 +1,41 @@
-package ge.tbc.testautomation.tests;
+package ge.tbc.testautomation.steps;
 
+import ge.tbc.testautomation.base.BaseStep;
 import ge.tbc.testautomation.data.Constants;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-public class CookiesTest {
-    WebDriver driver;
+public class CookiesSteps extends BaseStep {
 
-    @BeforeMethod
-    public void setup() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-    }
-    @AfterMethod
-    public void tearDown() {
-        driver.quit();
+    public CookiesSteps(WebDriver driver) {
+        super(driver);
     }
 
-
-    @Test
-    public void filterCookies() {
+    public CookiesSteps navigateToFilterCookiesUrl() {
         driver.get(Constants.FILTER_COOKIES_URL);
-
-        Set<Cookie> cookies = driver.manage().getCookies();
-        List<Cookie> matchingCookies = cookies.stream().filter(cookie -> cookie.getName()
-                .contains(Constants.COOKIE_NAME) && cookie.getValue().contains(Constants.COOKIE_VALUE)).toList();
-
-        Assert.assertFalse(matchingCookies.isEmpty());
+        return this;
     }
 
-    @Test
-    public void injectCookie() {
-        driver.get(Constants.INJECT_COOKIE_URL);
+    public CookiesSteps verifyMatchingCookies() {
+        Set<Cookie> cookies = driver.manage().getCookies();
+        List<Cookie> matchingCookies = cookies.stream()
+                .filter(cookie -> cookie.getName().contains(Constants.COOKIE_NAME) && cookie.getValue().contains(Constants.COOKIE_VALUE))
+                .toList();
+        Assert.assertFalse(matchingCookies.isEmpty());
+        return this;
+    }
 
+    public CookiesSteps navigateToInjectCookiesUrl() {
+        driver.get(Constants.INJECT_COOKIE_URL);
+        return this;
+    }
+
+    public CookiesSteps injectAndVerifyCookies() {
         List<Cookie> myCookies = new ArrayList<>();
         for (int i = 1; i <= 10; i++) {
             Cookie cookie = new Cookie("cookie" + i, "value" + i);
@@ -49,7 +43,6 @@ public class CookiesTest {
             myCookies.add(cookie);
         }
 
-        System.out.println("added cookies:");
         for (Cookie cookie : myCookies) {
             Cookie myCookieCount = driver.manage().getCookieNamed(cookie.getName());
             Assert.assertNotNull(myCookieCount);
@@ -65,8 +58,6 @@ public class CookiesTest {
             Cookie deletedCookies = driver.manage().getCookieNamed(cookie.getName());
             Assert.assertNull(deletedCookies);
         }
+        return this;
     }
-
-
-
 }

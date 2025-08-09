@@ -2,7 +2,7 @@ package ge.tbc.testautomation.tests;
 
 import com.github.javafaker.Faker;
 import ge.tbc.testautomation.data.Constants;
-import ge.tbc.testautomation.data.util.HelperFunc;
+import ge.tbc.testautomation.util.HelperFunc;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
