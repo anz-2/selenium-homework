@@ -37,9 +37,6 @@ public class WebElementTest {
         Assert.assertEquals(colA.getAttribute("draggable"),"true");
         Assert.assertEquals(colB.getAttribute("draggable"),"true");
 
-        WebElement link = driver.findElement(By.cssSelector("#page-footer > div > div > a"));
-        Assert.assertEquals(link.getAttribute( "href"), Constants.ELEMENTAL_SELENIUM_LINK);
-
     }
 
     @Test

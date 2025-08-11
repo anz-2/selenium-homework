@@ -1,4 +1,4 @@
-package ge.tbc.testautomation.data.util;
+package ge.tbc.testautomation.util;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
